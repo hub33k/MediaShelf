@@ -1,0 +1,25 @@
+{
+  "$schema": "https://turborepo.com/schema.json",
+  "ui": "tui",
+  "tasks": {
+    "clean": {
+      "cache": false
+    },
+
+    "format": {
+      "outputLogs": "new-only"
+    },
+    "lint": {
+      "dependsOn": ["^lint"]
+    },
+    "check": {
+      "dependsOn": ["^check"]
+    },
+    "typecheck": {
+      "dependsOn": ["^typecheck"]
+    },
+    "healthcheck": {
+      "dependsOn": ["^healthcheck"]
+    }
+  }
+}
